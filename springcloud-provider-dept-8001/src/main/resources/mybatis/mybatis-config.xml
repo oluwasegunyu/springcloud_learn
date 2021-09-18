@@ -10,9 +10,7 @@
         该标签包含了很多重要的配置，比如缓存等
      -->
     <settings>
-        <!-- mapUnderScoreToCamelCase：数据库字段中的下划线加其后的第一字母读取出来后去掉下划线并字母大写，如：first_name变成firstName -->
-        <setting name="mapUnderscoreToCamelCase" value="true" />
-        <setting name="cacheEnabled" value="true"/>
+         <setting name="cacheEnabled" value="true"/>
     </settings>
 
 </configuration>
