@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- 配置里面用到大写的字符串常量，都在Mybatis在给特定的类启的别名，可以在org.apache.ibatis.session.Configuration的构造函数中找到 -->
+<configuration>
+
+    <!--
+        该标签包含了很多重要的配置，比如缓存等
+     -->
+    <settings>
+        <!-- mapUnderScoreToCamelCase：数据库字段中的下划线加其后的第一字母读取出来后去掉下划线并字母大写，如：first_name变成firstName -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+</configuration>
