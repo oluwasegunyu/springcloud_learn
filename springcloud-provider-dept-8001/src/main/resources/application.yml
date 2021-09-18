@@ -23,8 +23,9 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://yxy7001.com:7001/eureka/,http://yxy7002.com:7002/eureka/,http://yxy7003.com:7003/eureka/
   instance:
+    prefer-ip-address: true
     instance-id: springcloud-provider-dept8001
 
 info:
