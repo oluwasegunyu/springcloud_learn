@@ -6,3 +6,8 @@ eureka:
     service-url:
       defaultZone: http://yxy7001.com:7001/eureka/,http://yxy7002.com:7002/eureka/,http://yxy7003.com:7003/eureka/
     register-with-eureka: false
+
+#开启feign.hystrix降级服务
+feign:
+  hystrix:
+    enabled: true
